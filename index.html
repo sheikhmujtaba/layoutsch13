@@ -1,0 +1,23 @@
+<html>
+<head>
+     <link rel="stylesheet" href="style.css">
+ <h1 class="title">
+Layouts
+    </h1>   
+    </head>
+<body>
+    <p>
+  There are three main layouts discussed in chapter 13: Stack layout, Pie layout and Force layout. All of these layouts have one thing in common that all of them take data or array of objects and transforms this data for the specific type of layout they are going to be used for. For instance, when you provide d3.pie() with a dataset it will convert that dataset in such a way that it can be used to create a pie chart. The layouts do the hard work for us as they calculate all the angles and paths that need to be used to create that specific type of visualization. All the layouts reconfigure the data, so that it becomes easier to create that specific type of visualisation. 
+    </p>
+    <p>
+     The pie layout is usually used to create pie charts as it will calculate the start angle and end angle for each data point and then d3.arc can be used to draw the actual wedges as it will calculate the path for us. 
+    </p>
+    <p>
+        Stack layout can be used to make stacked bar charts or stacked area charts. All you need to do is identify each category in your dataset using the d3.keys function and stack will create an array for you which can be used create the stacked bar charts 
+    </p>
+    <p>
+    Force layouts, they should be provided with nodes and edges as two different array of objects and then force will automatically link the nodes that join with each other by analyzing the data.     
+    </p>
+   
+</body>
+</html>
